@@ -389,7 +389,7 @@ figure p {
 }
 figcaption {
   margin-top: 3px;
-  font-size: smaller;
+  font-size: small;
   text-align: center;
   font-style: italic;
 }
@@ -934,13 +934,13 @@ pre code {
   font-weight: 300;
   color: #311e3e;
 }
+.site-masthead img{
+  width: 55px;
+  height: 55px;
+}
 
-.site-masthead {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 55px
-  height: 55px
+.main-header .logo a, .site-masthead img{
+  display: inline-block;
 }
 
 .main-nav {
@@ -1685,12 +1685,9 @@ pre code {
     color: #311e3e;
   }
   
-  .site-masthead {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 52px
-    height: 52px
+  .site-masthead img{
+    width: 52px;
+    height: 52px;
   }
 }
 
@@ -1702,13 +1699,9 @@ pre code {
     font-weight: 300;
     color: #311e3e;
   }
-  
-  .site-masthead {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50px
-    height: 50px
+  .site-masthead img{
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -1818,11 +1811,13 @@ pre code {
     font-weight: 300;
     color: #311e3e;
   }
-  
-  .site-masthead {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .site-masthead img{
+    width: 53px;
+    height: 53px;
+  }
+
+  .main-header .logo a, .site-masthead img{
+    display: inline-block;
   }
 }
 
@@ -1933,62 +1928,8 @@ pre code {
     color: #311e3e;
   }
   
-  .site-masthead {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media only screen and (max-width: 406px) {
-
-  img {
-    height: auto;
-    max-width: 80%;
+  .site-masthead img{
     width: 50px;
     height: 50px;
-  }
-
-  .main-header .logo a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 300;
-    color: #311e3e;
-  }
-  
-  .site-masthead {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media only screen and (max-width: 350px) {
-  h1 {
-    font-size: 1.5em;
-    margin: 0.67em 0;
-  }
-  .page-image .cover-image {
-    height: 80%;
-    width: 100%;
-  }
-  img {
-    height: auto;
-    max-width: 80%;
-    width: 45px;
-    height: 45px;
-  }
-
-  .main-header .logo a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 300;
-    color: #311e3e;
-  }
-  
-  .site-masthead {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
