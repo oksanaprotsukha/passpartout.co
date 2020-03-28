@@ -388,7 +388,8 @@ figure p {
   margin-bottom: 0px;
 }
 figcaption {
-  margin-top: 3px;
+  margin-top: 1px;
+  margin-bottom: 10px;
   font-size: small;
   text-align: center;
   font-style: italic;
