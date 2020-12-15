@@ -114,6 +114,12 @@ pre {
   clear: both;
 }
 
+/* modify Bootstrap variables here 
+
+@import 'bootstrap/bootstrap'; */
+
+/* add additional CSS rules below */
+
 /* = = = = = = = = = = Header Styles = = = = = = = = = = */
 @import "parts/header";
 
@@ -147,3 +153,4 @@ pre {
 
 /* = = = = = = = = = = Media = = = = = = = = = = */
 @import "media"
+

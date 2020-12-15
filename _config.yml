@@ -106,3 +106,5 @@ responsive_image:
   # images. This is useful for resizing images which will be referenced from stylesheets.
   extra_images:
     - uploads/*/*/*/*.{jpeg,jpg}
+  
+ 

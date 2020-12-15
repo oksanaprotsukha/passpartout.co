@@ -1934,3 +1934,32 @@ pre code {
     height: 45px;
   }
 }
+
+/*custom*/
+
+.carousel .carousel-indicators li {
+  width: .625rem;
+  height: .625rem;
+  cursor: pointer;
+  border-radius: 50%
+}
+.carousel .carousel-control-prev-icon,
+.carousel .carousel-control-next-icon {
+    width: 20px;
+    height: 20px
+}
+
+.carousel .carousel-control-prev-icon {
+    background-image: url(../css/img/svg/arrow_left.svg)
+}
+
+.carousel .carousel-control-next-icon {
+    background-image: url(../css/img/svg/arrow_right.svg)
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  color: #FFFAFA;
+  font-weight: 380;
+  font-family: 'Roboto',sans-serif;
+}
