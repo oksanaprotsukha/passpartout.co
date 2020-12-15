@@ -1,9 +1,8 @@
   {% assign images = include.images | split: ',' %}
   <div id="{{include.carouselID}}" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-        <li data-target="#{{include.carouselID}}" data-slide-to="0" class="active"></li>
         {% for image in images %}
-        <li data-target="#{{include.carouselID}}" data-slide-to="{{forloop.index}}"></li>
+        <li data-target="#{{include.carouselID}}" data-slide-to="{{forloop.index}}"{% if forloop.index0==0 %} class="active" {% endif %}></li>
         {% endfor %}
     </ol>
     <div class="carousel-inner">
