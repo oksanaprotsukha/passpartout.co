@@ -871,7 +871,7 @@ pre code {
 }
 
 .wrapper {
-  width: 960px;
+  width: 700px; /*960px*/
   max-width: 90%;
   margin: 0 auto;
   position: relative;
@@ -924,7 +924,7 @@ pre code {
 .main-header .logo {
   width: 50%;
   text-align: center;
-  vertical-align: 17px;
+  vertical-align: -5px;
   padding-left: 5px;
 }
 
@@ -1959,7 +1959,32 @@ pre code {
 
 .carousel-caption h5,
 .carousel-caption p {
-  color: #FFFAFA;
+  color: #171414;
   font-weight: 380;
   font-family: 'Roboto',sans-serif;
+}
+
+.rgba-black-slight,
+.rgba-black-slight:after {
+    background-color: rgba(0, 0, 0, 0.1)
+}
+
+.rgba-black-light,
+.rgba-black-light:after {
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+.carousel-caption {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.carousel-indicators {
+position: absolute;
+top:50%;
+left: 150%;
+z-index: 15;
+text-align: center;
+list-style: none;
 }

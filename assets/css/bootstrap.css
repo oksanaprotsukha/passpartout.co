@@ -6573,6 +6573,7 @@ a.close.disabled {
   list-style: none;
 }
 
+
 .carousel-indicators li {
   box-sizing: content-box;
   -ms-flex: 0 1 auto;
@@ -6602,13 +6603,13 @@ a.close.disabled {
 }
 
 .carousel-caption {
-  position: absolute;
-  right: 15%;
+  position: relative; /*changed from absolute */
+  /*right: 15%; */
   bottom: 20px;
-  left: 15%;
+  /*left: 15%;*/
   z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   color: #fff;
   text-align: center;
 }

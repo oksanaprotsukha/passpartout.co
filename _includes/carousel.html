@@ -1,6 +1,9 @@
   {% assign images = include.images | split: ',' %}
-  <div id="{{include.carouselID}}" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
+  {% assign images_caption = include.images_caption | split: ',' %}
+  {% assign images_subcaption = include.images_subcaption | split: ',' %}
+
+  <div id="{{include.carouselID}}" class="carousel slide" data-ride="carousel" data-interval="false">
+    <ol class="carousel-indicators" style="margin-top:10rem !important">
         {% for image in images %}
         <li data-target="#{{include.carouselID}}" data-slide-to="{{forloop.index}}"{% if forloop.index0==0 %} class="active" {% endif %}></li>
         {% endfor %}
@@ -8,11 +11,11 @@
     <div class="carousel-inner">
     {% for image in images %}
       <div class="carousel-item {% if forloop.index0==0 %} active {% endif %}">
-        <img class="d-block w-100" src="{{site.baseurl}}/assets/img/{{image}}" alt="First slide">
-          <div class="carousel-caption d-none d-md-block">
-              <h5>First encounter with a laughing thrush</h5>
-              <p>(garrulax morrisonianus)</p>
-          </div>
+        <img class="d-block w-100" src="{{site.baseurl}}/assets/img/{{image}}" data-size="1600x1067" alt="First slide">
+        <!-- <div class="carousel-caption d-none d-md-block .bg-transparent text-dark mb-4"> -->
+              <figcaption>{{images_caption[forloop.index0]}}</figcaption>
+              <!--<p>{{images_subcaption[forloop.index0]}}</p>
+          </div>-->
       </div>
     {% endfor %}
     </div>
